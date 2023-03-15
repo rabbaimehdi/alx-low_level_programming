@@ -9,12 +9,4 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
-
-	for (; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = src[i];
-	return (dest);
 }

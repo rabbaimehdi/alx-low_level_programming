@@ -8,12 +8,4 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i = 0;
-
-	for (; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = src[i];
-	return (dest);
 }
