@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - main entry
  * @argc: arg counter
- * @*argv[]: arg values
+ * @argv:  arg values
  * Return: 0
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
