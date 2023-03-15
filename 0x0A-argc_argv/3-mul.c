@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	if (argc != 3)
+	if (argc < 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	printf("%d\n", argv[1] * arv[2]);
