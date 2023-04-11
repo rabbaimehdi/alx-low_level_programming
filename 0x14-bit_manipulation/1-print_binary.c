@@ -6,7 +6,7 @@
  *
  * Return: Binary representation of a nnumber
  *
- * */
+*/
 
 void print_binary(unsigned long int n)
 {
