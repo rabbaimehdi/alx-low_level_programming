@@ -9,23 +9,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int number = 0, multiplicator = 1;
-	int length;
+	unsigned int total, power;
+	int len;
 
-	if (*b == '\0')
+	if (!b)
 		return (0);
 
-	for (length = 0; b[length];)
-		length++;
-
-	for (length -= 1; length >= 0; length--)
+	for (len = 0; b[len]; len++)
 	{
-		if (b[length] != '0' && b[length] != '1')
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
-
-		number += (b[length] - '0') * multiplicator;
-		multiplicator *= 2;
 	}
 
-	return (number);
+	for (power = 1, total = 0, len--; len >= 0; len--, power *= 2)
+	{
+		if (b[len] == '1')
+			total += power;
+	}
+
+	return (total);
 }
