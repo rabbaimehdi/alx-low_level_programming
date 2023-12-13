@@ -2,7 +2,7 @@
 
 /**
  * binary_search - searches using a binary search algorithm
- * 
+ *
  * @array: pointer to first element
  * @size: number of elements in array
  * @value: value to search
